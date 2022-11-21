@@ -1,3 +1,4 @@
+//Ejercicio6
 function roundTo(number, countDecimal) {
     let counter = 1;
     let decimal = 10;
@@ -8,6 +9,8 @@ function roundTo(number, countDecimal) {
     return Math.round(number * decimal) / decimal;
 }
 
-const roundedResult = roundTo(567.126767, 2);
-
-console.log(roundedResult);
+const roundedResult = roundTo(2.123, 2);
+console.log(roundedResult); // 2.12
+ 
+const roundedResult2 = roundTo(1.123456789, 6);
+console.log(roundedResult); // 1.123457
