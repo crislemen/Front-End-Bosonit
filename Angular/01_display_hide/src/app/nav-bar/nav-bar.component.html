@@ -1,0 +1,8 @@
+<div #boton class="ms-5 me-2">
+    <h1>Hello World</h1>
+    <div class=" border rounded shadow">Tareas</div>
+    <button value="Enseñar" type="button" class="btn btn-primary mt-3"(click)="mostrarComponente()">{{valorBoton}}</button>
+</div>
+<div *ngIf="setVisible == true ">
+    <app-container></app-container>
+</div>
