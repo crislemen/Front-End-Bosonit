@@ -1,0 +1,15 @@
+<div class="parent">
+  <h2>Parent</h2>
+  <p>Using SERVICE: {{ getChildMessageWithService() }}</p>
+  <p>Using OUTPUT: {{ message }}</p>
+  <P>Using Observable: {{ message }}</P>
+  <button (click)="setParentMessageWithService()">use service</button>
+  <button (click)="setParentMessageWithInputProperty()">
+    use input property
+  </button>
+  <button (click)="setParentMessageWithObservable()">use observable</button>
+  <app-child
+    (onChildSendMessage)="getChildMessageWithOutput($event)"
+    [parentMessage]="parentMessage"
+  ></app-child>
+</div>

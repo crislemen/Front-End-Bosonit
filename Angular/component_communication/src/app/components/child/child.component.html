@@ -1,0 +1,10 @@
+<div class="wrapper-child">
+    <h2>Child</h2>
+    <p>Using SERVICE: {{ getParentMessageWithService() }}</p>
+    <p>Using OUTPUT: {{ message }}</p>
+    <P>Using Observable: {{ message }}</P>
+    <button (click)="setChildMessageWithService()">use service</button>
+    <button (click)="setChildMessageWithOutput()">use output property</button>
+    <button (click)="setChildMessageWithObservable()">use observable</button>
+  </div>
+  
