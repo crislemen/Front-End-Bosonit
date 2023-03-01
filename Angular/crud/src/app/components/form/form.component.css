@@ -1,0 +1,15 @@
+.container{
+  display: flex;
+}
+.form{
+  box-shadow: 2px;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-left: 5%;
+}
+#submit{
+  margin-top: 10px;
+}
+.table{
+  margin-left: 20%;
+}

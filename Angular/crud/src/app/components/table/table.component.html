@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="header">
+        <table>
+            <tr>
+                <td>Username</td>
+                <td>E-mail</td>
+                <td>Sub</td>
+                <td>Country</td>
+                <td>City</td>
+                <td>Actions</td>
+            </tr>
+            <tr
+            *ngFor="let user of userArray">
+            <td>{{user.username}}</td>
+            <td>{{user.email}}</td>
+            <td *ngIf="user.subscription == true" id="img-sub"> <img src="../../../assets/tick.png" alt="Tick"></td>
+            <td *ngIf="user.subscription != true" id="img-sub"></td>
+            <td>{{user.country}}</td>
+            <td>{{user.city}}</td>
+            <td><img src="../../../assets/pincel.png" alt="edit" id="img-edit"><img src="../../../assets/goma.png" alt="delete" id="img-delete"></td>
+            </tr>
+        </table>
+    </div>
+
+</div>
